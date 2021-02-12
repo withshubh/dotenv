@@ -1,20 +1,17 @@
-Lint/HandleExceptions:
-  Exclude:
-    - 'lib/dotenv/rails.rb'
-    - 'lib/dotenv.rb'
-
+---
 Style/Documentation:
   Exclude:
-    - 'Rakefile'
-    - 'lib/dotenv/version.rb'
-
-Style/FileName:
-  Exclude:
-    - 'lib/dotenv/rails-now.rb'
-    - 'lib/dotenv-rails.rb'
-
+  - Rakefile
+  - lib/dotenv/version.rb
 Style/HashSyntax:
-  EnforcedStyle: 'ruby19'
-
+  EnforcedStyle: ruby19
 Style/StringLiterals:
-  EnforcedStyle: 'double_quotes'
+  EnforcedStyle: double_quotes
+Naming/FileName:
+  Exclude:
+  - lib/dotenv/rails-now.rb
+  - lib/dotenv-rails.rb
+Lint/SuppressedException:
+  Exclude:
+  - lib/dotenv/rails.rb
+  - lib/dotenv.rb
